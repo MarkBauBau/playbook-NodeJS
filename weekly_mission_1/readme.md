@@ -21,13 +21,21 @@ En esta carpeta se encuentran todos los ejemplos y actividades desarrollados a l
     - **logger.js:** Contiene la "clase" logger con su constructor y la función **_log_**, además incluye dos tipos de exportación, la primera exporta el objeto instanciado y la segunda exporta toda la clase.
     - **patcher.js:** Instancia el objeto creado de la clase y le añade la función **_customMessage_**.
     - **main.js:** Llama el módulo que modifica el objeto instanciado y el módulo en logger que devolverá el objeto modificado, posteriormente llama a la función que se le agrego a la clase con el módulo patcher.
-- [Example7](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example). En la carpeta example7 se encuentra un ejemplo de **EcmaScript Modules**, con los siguientes archivos.
-    - **package.json:** Indica que se trata de un proyecto de JavaScript
+- [Example7](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example7). En la carpeta example7 se encuentra un ejemplo de **EcmaScript Modules**, con los siguientes archivos.
+    - **package.json:** Indica que se trata de un proyecto de JavaScript.
     - **logger.js:** Es un módulo que se comporta como si fuera un objeto que contiene todo lo definido dentro de este archivo. Dentro de este archivo se exporta lo siguiente:
-        - La función log
-        - La constante DEFAULT_LEVEL
+        - La función log.
+        - La constante DEFAULT_LEVEL.
         - El objeto LEVELS con sus distintos valores.
         - La clase logger con su constructor y función log.
     - **main_module.js:** Importa el módulo de **logger** y despliega en consola el contenido que exporta.
-    - **main.js:** Realiza lo mismo que main_module
+    - **main.js:** Realiza lo mismo que main_module.
     - **main_2.js** Importa la función **_log_** de logger y le pasa el mensaje que requiere como parámetro.
+- [Example8](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example8). En la carpeta example8 se encuentra un ejemplo de **EcmaScript Export Default**, con los siguientes archivos.
+    - **package.json:** Indica que se trata de un proyecto de JavaScript.
+    - **logger.js:** Crea y exporta la clase logger con su constructor y la función **_log_**, para exportarla hace uso de **_export default_** esto permite que pueda ser importada por otro archivo.
+    - **main.js:** Importa la clase logger renombrándola como **MyLogger**, instancia un objeto de esa clase importada y llama a la función log.
+    - **main_2.js:** Importa la clase logger como módulo de EcmaScript e imprime en consola su contenido.
+
+
+
