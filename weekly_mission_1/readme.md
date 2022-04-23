@@ -1,1 +1,33 @@
 # Weekly Mission 1
+
+En esta carpeta se encuentran todos los ejemplos y actividades desarrollados a lo largo de la semana 1
+
+- [Example0](https://github.com/MarkBauBau/playbook-NodeJS/blob/main/weekly_mission_1/hello.js). Para comprobar la correcta instalación del entorno se creó el archivo hello.js que contiene una impresión en la terminal.
+- [Example1](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example1). En la carpeta example 1 se encuentra main.js que explica los **Objetos de JavaScript** con sus propiedades y variables locales y públicas.
+- [Example2](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example2). En la carpeta example 2 se explica la **Exportación de funciones entre scripts con CommonJS**, con los siguientes archivos: 
+    - **logger.js:** Contiene las funciones **info** y **verbose** que serán exportadas
+    - **main.js:** Crea un objeto de logger y llama a sus funciones.
+- [Example3](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example3). En la carpeta example 3 se explican las **Diferentes formas de exportar funciones**, con los siguientes archivos: 
+    - **logger_1.js:** Contiene la declaración y exportación de manera sencilla de una función.
+    - **logger_2.js:** Contiene la exportación del contenido de una función con el nombre **verbose**.
+    - **main.js:** Crea objetos de logger_1 y logger_2 llamando a sus respectivas funciones, la primera de manera sencilla y la segunda con el nombre de la función **verbose**
+- [Example4](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example4). En la carpeta example4 se encuentra el primer ejemplo de **Clases y objetos**, destacando que en JavaScript todo son objetos, por lo que para incluir el paradigma de Programación Orientada a Objetos se simula la creación de una clase dentro de un archivo de JavaScript. La carpeta contiene los siguientes archivos:
+    - **logger.js:** Contiene la "clase" logger con su constructor y los métodos **_info_** y **_verbose_** que reciben como parámetro un mensaje.
+    - **main.js:** Contiene la instancia de dos objetos de la clase **logger**, cada uno llamando a las respectivas funciones **_info_** y **_verbose_**
+- [Example5](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example5). En la carpeta example5 se encuentra el segundo ejemplo de **Clases y objetos**, con los siguientes archivos.
+    - **logger.js:** Contiene la "clase" logger con su constructor, que cuenta con los atributos **_count_** y **_name_**, recibiendo solo como parámetro el name. Además cuenta con el método **_log_** que recibe como parámetro un mensaje, realiza un aumento en **_count_** y despliega un mensaje en consola. Cabe destacar que al exportar la clase se instancia un objeto que contiene un **_name_** por DEFAULT.
+    - **main.js:** Contiene la instancia de dos objetos de la clase logger. El primero utiliza el valor por default para el constructor y llama el método **_log_**, mientras que el segundo le asigna una nuevo **_name_** al constructor y llama el método **_log_**
+- [Example6](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example6). En la carpeta example6 se encuentra el ejemplo de **Modificación de Clases**, con los siguientes archivos.
+    - **logger.js:** Contiene la "clase" logger con su constructor y la función **_log_**, además incluye dos tipos de exportación, la primera exporta el objeto instanciado y la segunda exporta toda la clase.
+    - **patcher.js:** Instancia el objeto creado de la clase y le añade la función **_customMessage_**.
+    - **main.js:** Llama el módulo que modifica el objeto instanciado y el módulo en logger que devolverá el objeto modificado, posteriormente llama a la función que se le agrego a la clase con el módulo patcher.
+- [Example7](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example). En la carpeta example7 se encuentra un ejemplo de **EcmaScript Modules**, con los siguientes archivos.
+    - **package.json:** Indica que se trata de un proyecto de JavaScript
+    - **logger.js:** Es un módulo que se comporta como si fuera un objeto que contiene todo lo definido dentro de este archivo. Dentro de este archivo se exporta lo siguiente:
+        - La función log
+        - La constante DEFAULT_LEVEL
+        - El objeto LEVELS con sus distintos valores.
+        - La clase logger con su constructor y función log.
+    - **main_module.js:** Importa el módulo de **logger** y despliega en consola el contenido que exporta.
+    - **main.js:** Realiza lo mismo que main_module
+    - **main_2.js** Importa la función **_log_** de logger y le pasa el mensaje que requiere como parámetro.
