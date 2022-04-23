@@ -37,6 +37,10 @@ En esta carpeta se encuentran todos los ejemplos y actividades desarrollados a l
     - **main.js:** Importa la clase logger renombrándola como **MyLogger**, instancia un objeto de esa clase importada y llama a la función log.
     - **main_2.js:** Importa la clase logger como módulo de EcmaScript e imprime en consola su contenido.
 - [Example9](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example9). En la carpeta example9 se encuentra el primer ejercicio con la clase **pokemon** utilizando **CommonJS** para exportarla, con los siguientes archivos.
+    - **package.json:** Indica que se trata de un proyecto de JavaScript.
     - **pokemon.js:** Contiene la clase pokemon con su constructor y las funciones **_sayHello_** y **_sayMessage_**. Al final contiene la exportación haciendo uso de CommonJS.
-    - **main.js:** Invoca el módulo que contiene la clase, instancia objetos de dicho módulo y llama a las funciones **_sayHello_** y **_sayMessage_**.
-
+    - **main.js:** Invoca el módulo que contiene la clase, instancia objetos de dicho módulo y llama a las funciones **_sayHello_** y **_sayMessage_** para cada objeto instanciado.
+- [Example10](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example10). En la carpeta example10 se encuentra el segundo ejercicio con la clase **pokemon** utilizando **EcmaScript Modules (ESM)** para exportarla, con los siguientes archivos.
+    - **package.json:** Indica que se trata de un proyecto de JavaScript.
+    - **pokemon.js:** Al principio contiene la exportación haciendo uso de **_export default_** antes de nombrar la clase. Contiene la clase pokemon con su constructor y la función **_sayHello_**. 
+    - **main.js:** Invoca el módulo que contiene la clase, instancia un objeto de dicho módulo y llama a la función **_sayHello_**.
