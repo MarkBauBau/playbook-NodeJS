@@ -17,4 +17,7 @@ En esta carpeta se encuentran todos los ejemplos y actividades desarrollados a l
 - [Example5](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example5). En la carpeta example5 se encuentra el segundo ejemplo de **Clases y objetos**, con los siguientes archivos.
     - **logger.js:** Contiene la "clase" logger con su constructor, que cuenta con los atributos **_count_** y **_name_**, recibiendo solo como parámetro el name. Además cuenta con el método **_log_** que recibe como parámetro un mensaje, realiza un aumento en **_count_** y despliega un mensaje en consola. Cabe destacar que al exportar la clase se instancia un objeto que contiene un **_name_** por DEFAULT.
     - **main.js:** Contiene la instancia de dos objetos de la clase logger. El primero utiliza el valor por default para el constructor y llama el método **_log_**, mientras que el segundo le asigna una nuevo **_name_** al constructor y llama el método **_log_**
-
+- [Example6](https://github.com/MarkBauBau/playbook-NodeJS/tree/main/weekly_mission_1/example6). En la carpeta example6 se encuentra el ejemplo de **Modificación de Clases**, con los siguientes archivos.
+    - **logger.js:** Contiene la "clase" logger con su constructor y la función **_log_**, además incluye dos tipos de exportación, la primera exporta el objeto instanciado y la segunda exporta toda la clase.
+    - **patcher.js:** Instancia el objeto creado de la clase y le añade la función **_customMessage_**.
+    - **main.js:** Llama el módulo que modifica el objeto instanciado y el módulo en logger que devolverá el objeto modificado, posteriormente llama a la función que se le agrego a la clase con el módulo patcher.
